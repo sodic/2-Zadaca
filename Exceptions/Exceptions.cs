@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Exceptions
 {
-    public class DuplicateTodoItemException:Exception
+    public class DuplicateTodoItemException : Exception
     {
         public DuplicateTodoItemException() : base("duplicate id: {0}")
         {
-            //todo
+            //todokd
         }
     }
 }

@@ -41,12 +41,12 @@ namespace LINQExpressions
                 new University(),
             };
 
-            Student[] allCroatianStudents = universities.SelectMany(x => x.Students)
-                                                        .Distinct()
-                                                        .ToArray();
-            Student[] croatianStudentsOnMultipleUniversities =
-                universities.SelectMany(x => x.Students).GroupBy(y => y).Where(z => z.Count() > 1).Select(group => group.Key).ToArray();
-            Student[] studentsOnMaleOnlyUniversities = universities.Select(x => x)                                                                   .Where(y => y.Students                                                                                         .Count(z => z.Gender == Gender.Female) == 0)                                                                   .SelectMany(q => q.Students)                                                                   .ToArray();
+            //Student[] allCroatianStudents = universities.SelectMany(x => x.Students)
+            //                                            .Distinct()
+            //                                            .ToArray();
+            //Student[] croatianStudentsOnMultipleUniversities =
+            //    universities.SelectMany(x => x.Students).GroupBy(y => y).Where(z => z.Count() > 1).Select(group => group.Key).ToArray();
+            //Student[] studentsOnMaleOnlyUniversities = universities.Select(x => x)            //                                                       .Where(y => y.Students            //                                                                             .Count(z => z.Gender == Gender.Female) == 0)            //                                                       .SelectMany(q => q.Students)            //                                                       .ToArray();
         }
     }
 }

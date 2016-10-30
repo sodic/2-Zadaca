@@ -1,0 +1,8 @@
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\AsyncMethods\bin\Debug\AsyncMethods.exe.config
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\AsyncMethods\bin\Debug\AsyncMethods.exe
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\AsyncMethods\bin\Debug\AsyncMethods.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\AsyncMethods\bin\Debug\FactorialDigitSum.exe
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\AsyncMethods\bin\Debug\FactorialDigitSum.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\AsyncMethods\obj\Debug\AsyncMethods.csprojResolveAssemblyReference.cache
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\AsyncMethods\obj\Debug\AsyncMethods.exe
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\AsyncMethods\obj\Debug\AsyncMethods.pdb

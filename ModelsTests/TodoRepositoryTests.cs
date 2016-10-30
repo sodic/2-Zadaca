@@ -171,7 +171,7 @@ namespace Repositories.Tests
             Assert.IsTrue(repository.GetActive().IndexOf(item2) == 0);
             Assert.AreEqual(repository.GetActive().Count, 1);
 
-            
+
         }
         //end tests for GetActive
 
@@ -204,12 +204,12 @@ namespace Repositories.Tests
             IToDoRepository repository = new TodoRepository();
             ToDoItem item1 = new ToDoItem("test1");
             ToDoItem item2 = new ToDoItem("test2");
-            item2.DateCreated=DateTime.UtcNow;
+            item2.DateCreated = DateTime.UtcNow;
             repository.Add(item2);
             repository.Add(item1);
             List<ToDoItem> list = repository.GetAll();
             Assert.AreEqual(list.Count, 2);
-            Assert.IsTrue(list.IndexOf(item1)==0 && list.IndexOf(item2)==1);
+            Assert.IsTrue(list.IndexOf(item1) == 0 && list.IndexOf(item2) == 1);
         }
 
         [TestMethod]
@@ -266,7 +266,7 @@ namespace Repositories.Tests
             repository.Add(item1);
             repository.Add(item3);
             var testList = repository.GetFiltered(x => String.Compare(x.Text, "test2") == 0);
-            Assert.IsTrue(testList.Count==2 && testList.IndexOf(item2)!=-1 && testList.IndexOf(item3)!=0);
+            Assert.IsTrue(testList.Count == 2 && testList.IndexOf(item2) != -1 && testList.IndexOf(item3) != 0);
         }
 
         [TestMethod]
@@ -279,7 +279,7 @@ namespace Repositories.Tests
             repository.Add(item2);
             repository.Add(item1);
             repository.Add(item3);
-            Assert.AreEqual(repository.GetFiltered(x => String.Compare(x.Text, "test4") == 0),null);
+            Assert.AreEqual(repository.GetFiltered(x => String.Compare(x.Text, "test4") == 0), null);
         }
 
         [TestMethod]
