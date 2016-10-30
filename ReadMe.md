@@ -1,5 +1,11 @@
 # dz2
 Druga domaća zadaća iz vještine C#
+Rješenja prvog zadatka nalaze se u projektima DataTypes, Exceptions, Models
+Rješenje drugog zadatka nalazi se u projektu ModelsTests
+Rješenja trećeg, četvrtog i petog zadatka nalaze se u projektu LINQExpressions, a potrebne klase u projektu Classes
+Rješenje šestog zadatka - projekt Threads
+Rješenje sedmog zadatka - projekt FactorialDigitSum
+Rješenje osmog zadatka - projekt AsyncMEthods
 
 #Pitanje 1
 Izvođenje programa trajalo je malo više od 5 sekundi.
