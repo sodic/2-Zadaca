@@ -76,7 +76,7 @@ namespace Repositories
     /// </summary>
     public class TodoRepository : IToDoRepository
     {
-        private List<ToDoItem> _dataBase = new List<ToDoItem>();
+        private readonly List<ToDoItem> _dataBase = new List<ToDoItem>();
 
 
         public ToDoItem Get(Guid toDoId)
@@ -89,7 +89,7 @@ namespace Repositories
             if (item == null)
                 throw new ArgumentNullException();
             if (_dataBase.Count(x => x.ID == item.ID) != 0)
-                throw new DuplicateTodoItemException();
+                throw new DuplicateTodoItemException($"duplicate id: {item.ID}");
             _dataBase.Add(item);
         }
 
@@ -103,15 +103,9 @@ namespace Repositories
 
         public void Update(ToDoItem item)
         {
-            if (_dataBase.Count(x => x.ID == item.ID) == 0)
-            {
-                Add(item);
-            }
-            else
-            {
+            if (_dataBase.Count(x => x.ID == item.ID) != 0)
                 _dataBase.Remove(Get(item.ID));
-                _dataBase.Add(item);
-            }
+            _dataBase.Add(item);
         }
 
         public bool MarkAsCompleted(Guid toDoID)
@@ -149,9 +143,8 @@ namespace Repositories
 
         public List<ToDoItem> GetFiltered(Func<ToDoItem, bool> filterFunction)
         {
-            List<ToDoItem> ReturnList = new List<ToDoItem>();
-            ReturnList = _dataBase.Where(filterFunction).OrderByDescending(x => x.DateCreated).ToList();
-            return ReturnList.Count == 0 ? null : ReturnList;
+            var returnList = _dataBase.Where(filterFunction).OrderByDescending(x => x.DateCreated).ToList();
+            return returnList.Count == 0 ? null : returnList;
         }
 
         /// <summary >
@@ -163,10 +156,6 @@ namespace Repositories
         public TodoRepository(IList<ToDoItem> initialDbState = null)
         {
             _inMemoryTodoDatabase = initialDbState ?? new List<ToDoItem>();
-            // Shorter way to write this in C# using ?? operator :
-            // _inMemoryTodoDatabase = initialDbState ?? new List < ToDoItem >() ;
-            // x ?? y -> if x is not null , expression returns x. Else y.
         }
     }
-    // implement ITodoRepository
 }

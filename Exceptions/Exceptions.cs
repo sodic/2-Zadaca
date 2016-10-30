@@ -8,9 +8,19 @@ namespace Exceptions
 {
     public class DuplicateTodoItemException : Exception
     {
-        public DuplicateTodoItemException() : base("duplicate id: {0}")
+
+        public DuplicateTodoItemException()
         {
-            //todokd
+        }
+
+        public DuplicateTodoItemException(string message)
+        : base(message)
+        {
+        }
+
+        public DuplicateTodoItemException(string message, Exception inner)
+        : base(message, inner)
+        {
         }
     }
 }
