@@ -1,0 +1,8 @@
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\LINQExpressions\bin\Debug\LINQExpressions.exe.config
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\LINQExpressions\bin\Debug\LINQExpressions.exe
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\LINQExpressions\bin\Debug\LINQExpressions.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\LINQExpressions\obj\Debug\LINQExpressions.exe
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\LINQExpressions\obj\Debug\LINQExpressions.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\LINQExpressions\bin\Debug\Classes.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\LINQExpressions\bin\Debug\Classes.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\LINQExpressions\obj\Debug\LINQExpressions.csprojResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Threads\bin\Debug\Threads.exe.config
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Threads\bin\Debug\Threads.exe
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Threads\bin\Debug\Threads.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Threads\obj\Debug\Threads.csprojResolveAssemblyReference.cache
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Threads\obj\Debug\Threads.exe
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Threads\obj\Debug\Threads.pdb

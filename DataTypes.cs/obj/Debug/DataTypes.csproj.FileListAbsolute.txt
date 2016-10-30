@@ -1,0 +1,5 @@
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\DataTypes.cs\bin\Debug\DataTypes.cs.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\DataTypes.cs\bin\Debug\DataTypes.cs.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\DataTypes.cs\obj\Debug\DataTypes.csprojResolveAssemblyReference.cache
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\DataTypes.cs\obj\Debug\DataTypes.cs.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\DataTypes.cs\obj\Debug\DataTypes.cs.pdb

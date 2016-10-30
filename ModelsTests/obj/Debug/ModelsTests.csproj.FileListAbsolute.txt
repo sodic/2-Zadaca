@@ -1,0 +1,13 @@
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\bin\Debug\ModelsTests.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\bin\Debug\ModelsTests.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\bin\Debug\DataTypes.cs.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\bin\Debug\Exceptions.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\bin\Debug\Models.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\bin\Debug\DataTypes.cs.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\bin\Debug\Exceptions.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\bin\Debug\Models.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\obj\Debug\ModelsTests.csprojResolveAssemblyReference.cache
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\obj\Debug\ModelsTests.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\ModelsTests\obj\Debug\ModelsTests.pdb

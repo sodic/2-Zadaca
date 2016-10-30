@@ -1,0 +1,9 @@
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Models\bin\Debug\Models.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Models\bin\Debug\Models.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Models\bin\Debug\DataTypes.cs.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Models\bin\Debug\Exceptions.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Models\bin\Debug\DataTypes.cs.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Models\bin\Debug\Exceptions.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Models\obj\Debug\Models.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Models\obj\Debug\Models.pdb

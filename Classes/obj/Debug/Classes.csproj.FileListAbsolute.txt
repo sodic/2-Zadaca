@@ -1,0 +1,5 @@
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Classes\bin\Debug\Classes.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Classes\bin\Debug\Classes.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Classes\obj\Debug\Classes.dll
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Classes\obj\Debug\Classes.pdb
+C:\Users\filip\Documents\GitHub\2-Zadaca\2-Zadaca\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
