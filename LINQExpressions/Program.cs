@@ -9,7 +9,8 @@ namespace LINQExpressions
 {
     class Program
     {
-
+
+
         static void Main(string[] args)
         {
 
@@ -47,7 +48,12 @@ namespace LINQExpressions
                                                         .ToArray();
             Student[] croatianStudentsOnMultipleUniversities =
                 universities.SelectMany(x => x.Students).GroupBy(y => y).Where(z => z.Count() > 1).Select(group => group.Key).ToArray();
-            Student[] studentsOnMaleOnlyUniversities = universities.Select(x => x)                                                                   .Where(y => y.Students                                                                                         .Count(z => z.Gender == Gender.Female) == 0)                                                                   .SelectMany(q => q.Students)                                                                   .ToArray();
+            Student[] studentsOnMaleOnlyUniversities = universities.Select(x => x)
+                                                                   .Where(y => y.Students
+                                                                                         .Count(z => z.Gender == Gender.Female) == 0)
+                                                                   .SelectMany(q => q.Students)
+                                                                   .ToArray();
+
         }
     }
 }

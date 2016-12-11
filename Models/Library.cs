@@ -76,36 +76,39 @@ namespace Repositories
     /// </summary>
     public class TodoRepository : IToDoRepository
     {
-        private readonly List<ToDoItem> _dataBase = new List<ToDoItem>();
-
+        /// <summary >
+        /// Repository does not fetch ToDoItems from the actual database ,
+        /// it uses in memory storage for this excersise .
+        /// </summary>
+        private readonly IList<ToDoItem> _inMemoryTodoDatabase;
 
         public ToDoItem Get(Guid toDoId)
         {
-            return _dataBase.FirstOrDefault(x => x.ID == toDoId);
+            return _inMemoryTodoDatabase.FirstOrDefault(x => x.ID == toDoId);
         }
 
         public void Add(ToDoItem item)
         {
             if (item == null)
                 throw new ArgumentNullException();
-            if (_dataBase.Count(x => x.ID == item.ID) != 0)
+            if (_inMemoryTodoDatabase.Count(x => x.ID == item.ID) != 0)
                 throw new DuplicateTodoItemException($"duplicate id: {item.ID}");
-            _dataBase.Add(item);
+            _inMemoryTodoDatabase.Add(item);
         }
 
         public bool Remove(Guid toDoID)
         {
-            if (_dataBase.Count(x => x.ID == toDoID) == 0)
+            if (_inMemoryTodoDatabase.Count(x => x.ID == toDoID) == 0)
                 return false;   //there was no element to remove
-            _dataBase.Remove(_dataBase.FirstOrDefault(x => x.ID == toDoID));
+            _inMemoryTodoDatabase.Remove(_inMemoryTodoDatabase.FirstOrDefault(x => x.ID == toDoID));
             return true;
         }
 
         public void Update(ToDoItem item)
         {
-            if (_dataBase.Count(x => x.ID == item.ID) != 0)
-                _dataBase.Remove(Get(item.ID));
-            _dataBase.Add(item);
+            if (_inMemoryTodoDatabase.Count(x => x.ID == item.ID) != 0)
+                _inMemoryTodoDatabase.Remove(Get(item.ID));
+            _inMemoryTodoDatabase.Add(item);
         }
 
         public bool MarkAsCompleted(Guid toDoID)
@@ -138,20 +141,14 @@ namespace Repositories
 
         public List<ToDoItem> GetCompleted()
         {
-            return GetFiltered(x => x.IsCompleted); ;
+            return GetFiltered(x => x.IsCompleted);
         }
 
         public List<ToDoItem> GetFiltered(Func<ToDoItem, bool> filterFunction)
         {
-            var returnList = _dataBase.Where(filterFunction).OrderByDescending(x => x.DateCreated).ToList();
+            var returnList = _inMemoryTodoDatabase.Where(filterFunction).OrderByDescending(x => x.DateCreated).ToList();
             return returnList.Count == 0 ? null : returnList;
         }
-
-        /// <summary >
-        /// Repository does not fetch ToDoItems from the actual database ,
-        /// it uses in memory storage for this excersise .
-        /// </summary>
-        private readonly IList<ToDoItem> _inMemoryTodoDatabase;
 
         public TodoRepository(IList<ToDoItem> initialDbState = null)
         {
